@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<style>
+div{ 
+width:500px;
+height:500px;
+border:1px solid red;
+margin:0 auto;
+padding:120px;
+box sizing:border-box;
+background-color:black;
+color:white;
+}
+body{
+background-color:red;
+}
+</style>
+</head>
+
+<body>
+
+<center><h1> Welcome to the<br>Kesari Computer Institute</h1></center>
+
+<center><h2>Examination Cell</h2></center>
+<hr><br>
+
+<div>
+<center><h3>Login Form</h3></center>
+
+Username:<br>
+<input type="text" name="username" id="username">
+<br><br>
+
+Password:<br>
+<input type="password" name="text" id="password">
+<br><br>
+
+<button onclick="login()">Submit</button>
+
+</div>
+<script type="text/javascript">
+
+function login()
+{
+var uname=document.getElementById('username').value;
+
+var pass=document.getElementById('password').value;
+
+if(uname=="pankaj" && pass=="112233")
+
+{
+location.assign("file:///C:/Users/pc/Desktop/city.html")
+
+}
+
+else
+{
+window.alert("login failed")
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
